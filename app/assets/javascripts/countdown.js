@@ -42,10 +42,10 @@
 			
 			//conditional Ss
             /*jshint validthis:true */
-			if (days === 1) { thisEl.find(".timeRefDays").text("day"); } else { thisEl.find(".timeRefDays").text("days"); }
-			if (hours === 1) { thisEl.find(".timeRefHours").text("hour"); } else { thisEl.find(".timeRefHours").text("hours"); }
-			if (minutes === 1) { thisEl.find(".timeRefMinutes").text("minute"); } else { thisEl.find(".timeRefMinutes").text("minutes"); }
-			if (seconds === 1) { thisEl.find(".timeRefSeconds").text("second"); } else { thisEl.find(".timeRefSeconds").text("seconds"); }
+			if (days === 1) { thisEl.find(".timeRefDays").text("dia"); } else { thisEl.find(".timeRefDays").text("dias"); }
+			if (hours === 1) { thisEl.find(".timeRefHours").text("hora"); } else { thisEl.find(".timeRefHours").text("horas"); }
+			if (minutes === 1) { thisEl.find(".timeRefMinutes").text("minuto"); } else { thisEl.find(".timeRefMinutes").text("minutos"); }
+			if (seconds === 1) { thisEl.find(".timeRefSeconds").text("segundo"); } else { thisEl.find(".timeRefSeconds").text("segundos"); }
 			
 			//logic for the two_digits ON setting
 			if(settings.format === "on") {

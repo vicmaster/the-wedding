@@ -1699,7 +1699,7 @@ figure.photostack-current::after {
 	font-family: 'Lato', 'Helvetica', sans-serif;
 	color: #D65679;
 	font-style: italic;
-	font-size: 1em !important;
+	font-size: 2em !important;
 	font-weight: 500;
 	padding-left: 0.6em;
 }
