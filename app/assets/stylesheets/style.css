@@ -655,11 +655,31 @@ section::after {
   margin: 0;
 }
 
+.hero-image li {
+	position: absolute;
+	width: 101%;
+	height: 980px;
+	top: -0.5%;
+	left: -0.5%;
+}
+
 .hero-image li img {
 	display: block;
 	width: 100%;
 }
 
+.backgroundsize 
+.hero-image li {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+}
+
+.no-js.backgroundsize 
+.hero-image li:first-child img {
+	display: block;
+}
 
 /* slideshow*/
 .cbp-bislideshow {

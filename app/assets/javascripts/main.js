@@ -5,20 +5,20 @@
 /*jshint -W117 */
 
 $(document).ready(function() {
-   "use strict";
-   $('a[href*="#"]').bind('click', function(e) {
-	e.preventDefault(); //prevent the "normal" behaviour which would be a "hard" jump
-       
-	var target = $(this).attr("href"); //Get the target
-			
-	// perform animated scrolling by getting top-position of target-element and set it as scroll target
-	$('html, body').stop().animate({ scrollTop: $(target).offset().top}, 2000, function() 
+  "use strict";
+  $('a[href*="#"]').bind('click', function(e) {
+    e.preventDefault(); //prevent the "normal" behaviour which would be a "hard" jump
+
+    var target = $(this).attr("href"); //Get the target
+
+    // perform animated scrolling by getting top-position of target-element and set it as scroll target
+    $('html, body').stop().animate({ scrollTop: $(target).offset().top}, 2000, function() 
         {
-        location.hash = target;  //attach the hash (#jumptarget) to the pageurl
-	});
-			
-	return false;
-   });
+          location.hash = target;  //attach the hash (#jumptarget) to the pageurl
+        });
+
+    return false;
+  });
 
 });
 
@@ -30,9 +30,9 @@ $(document).ready(function() {
 * - forked from http://github.com/zuk/jquery.inview/
 */
 (function ($) {
-	"use strict";
+  "use strict";
   var inviewObjects = {}, viewportSize, viewportOffset,
-      d = document, w = window, documentElement = d.documentElement, expando = $.expando, timer;
+    d = document, w = window, documentElement = d.documentElement, expando = $.expando, timer;
 
   $.event.special.inview = {
     add: function(data) {
@@ -49,7 +49,7 @@ $(document).ready(function() {
       // Don't waste cycles with an interval until we get at least one element that
       // has bound to the inview event.
       if (!timer && !$.isEmptyObject(inviewObjects)) {
-         timer = setInterval(checkInView, 250);
+        timer = setInterval(checkInView, 250);
       }
     },
 
@@ -58,8 +58,8 @@ $(document).ready(function() {
 
       // Clear interval when we no longer have any elements listening
       if ($.isEmptyObject(inviewObjects)) {
-         clearInterval(timer);
-         timer = null;
+        clearInterval(timer);
+        timer = null;
       }
     }
   };
@@ -97,7 +97,7 @@ $(document).ready(function() {
 
     $.each(inviewObjects, function(i, inviewObject) {
       var selector = inviewObject.data.selector,
-          $element = inviewObject.$element;
+        $element = inviewObject.$element;
       $elements = $elements.add(selector ? $element.find(selector) : $element);
     });
 
@@ -113,13 +113,13 @@ $(document).ready(function() {
         }
 
         var $element = $($elements[i]),
-            elementSize = { height: $element.height(), width: $element.width() },
-            elementOffset = $element.offset(),
-            inView = $element.data('inview'),
-            visiblePartX,
-            visiblePartY,
-            visiblePartsMerged;
-        
+          elementSize = { height: $element.height(), width: $element.width() },
+          elementOffset = $element.offset(),
+          inView = $element.data('inview'),
+          visiblePartX,
+          visiblePartY,
+          visiblePartsMerged;
+
         // Don't ask me why because I haven't figured out yet:
         // viewportOffset and viewportSize are sometimes suddenly null in Firefox 5.
         // Even though it sounds weird:
@@ -128,11 +128,11 @@ $(document).ready(function() {
         if (!viewportOffset || !viewportSize) {
           return;
         }
-        
+
         if (elementOffset.top + elementSize.height > viewportOffset.top &&
-            elementOffset.top < viewportOffset.top + viewportSize.height &&
-            elementOffset.left + elementSize.width > viewportOffset.left &&
-            elementOffset.left < viewportOffset.left + viewportSize.width) {
+          elementOffset.top < viewportOffset.top + viewportSize.height &&
+          elementOffset.left + elementSize.width > viewportOffset.left &&
+          elementOffset.left < viewportOffset.left + viewportSize.width) {
           visiblePartX = (viewportOffset.left > elementOffset.left ?
             'right' : (viewportOffset.left + viewportSize.width) < (elementOffset.left + elementSize.width) ?
             'left' : 'both');
@@ -153,7 +153,7 @@ $(document).ready(function() {
   $(w).bind("scroll resize", function() {
     viewportSize = viewportOffset = null;
   });
-  
+
   // IE < 9 scrolls to focused elements without firing the "scroll" event
   if (!documentElement.addEventListener && documentElement.attachEvent) {
     documentElement.attachEvent("onfocusin", function() {

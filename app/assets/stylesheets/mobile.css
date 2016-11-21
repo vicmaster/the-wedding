@@ -106,6 +106,18 @@
 		height: auto;
 	}
 
+	.backgroundsize .hero-image li {
+		-webkit-background-size: auto 100%;
+		-moz-background-size: auto 100%;
+		background-size: auto 100%;
+		background-position: center center;
+	}
+	
+	.hero-image li img {
+		display: block;
+		width: auto;
+	}
+
 	.backgroundsize .cbp-bislideshow li {
 		-webkit-background-size: auto 100%;
 		-moz-background-size: auto 100%;
@@ -335,6 +347,18 @@
 		height: auto;
 	}
 
+	.backgroundsize .hero-image li {
+		-webkit-background-size: auto 100%;
+		-moz-background-size: auto 100%;
+		background-size: auto 100%;
+		background-position: center center;
+	}
+	
+	.hero-image li img {
+		display: block;
+		width: auto;
+	}
+
 	.backgroundsize .cbp-bislideshow li {
 		-webkit-background-size: auto 100%;
 		-moz-background-size: auto 100%;
@@ -554,6 +578,18 @@
 	
 	#home {
 		min-height: 400px;
+	}
+
+	.backgroundsize .hero-image li {
+		-webkit-background-size: auto 100%;
+		-moz-background-size: auto 100%;
+		background-size: auto 100%;
+		background-position: center center;
+	}
+	
+	.hero-image li img {
+		display: block;
+		width: auto;
 	}
 
 	.backgroundsize .cbp-bislideshow li {
@@ -780,6 +816,18 @@
 		min-height: 400px;
 	}
 
+	.backgroundsize .hero-image li {
+		-webkit-background-size: auto 100%;
+		-moz-background-size: auto 100%;
+		background-size: auto 100%;
+		background-position: center center;
+	}
+	
+	.hero-image li img {
+		display: block;
+		width: auto;
+	}
+
 	.backgroundsize .cbp-bislideshow li {
 		-webkit-background-size: auto 100%;
 		-moz-background-size: auto 100%;
@@ -1002,6 +1050,18 @@
 	
 	#home {
 		min-height: 400px;
+	}
+
+	.backgroundsize .hero-image li {
+		-webkit-background-size: auto 100%;
+		-moz-background-size: auto 100%;
+		background-size: auto 100%;
+		background-position: center center;
+	}
+	
+	.hero-image li img {
+		display: block;
+		width: auto;
 	}
 
 	.backgroundsize .cbp-bislideshow li {
@@ -1230,6 +1290,18 @@
 		min-height: 460px;
 	}
 
+	.backgroundsize .hero-image li {
+		-webkit-background-size: auto 100%;
+		-moz-background-size: auto 100%;
+		background-size: auto 100%;
+		background-position: center center;
+	}
+	
+	.hero-image li img {
+		display: block;
+		width: auto;
+	}
+
 	.backgroundsize .cbp-bislideshow li {
 		-webkit-background-size: auto 100%;
 		-moz-background-size: auto 100%;
@@ -1454,6 +1526,18 @@
 	
 	#home {
 		min-height: 760px;
+	}
+
+	.backgroundsize .hero-image li {
+		-webkit-background-size: auto 100%;
+		-moz-background-size: auto 100%;
+		background-size: auto 100%;
+		background-position: center center;
+	}
+	
+	.hero-image li img {
+		display: block;
+		width: auto;
 	}
 
 	.backgroundsize .cbp-bislideshow li {
@@ -1716,6 +1800,18 @@
 		min-height: 780px;
 	}
 
+	.backgroundsize .hero-image li {
+		-webkit-background-size: auto 100%;
+		-moz-background-size: auto 100%;
+		background-size: auto 100%;
+		background-position: center center;
+	}
+	
+	.hero-image li img {
+		display: block;
+		width: auto;
+	}
+
 	.backgroundsize .cbp-bislideshow li {
 		-webkit-background-size: auto 100%;
 		-moz-background-size: auto 100%;
@@ -1967,6 +2063,18 @@
 	
 	#home {
 		min-height: 780px;
+	}
+
+	.backgroundsize .hero-image li {
+		-webkit-background-size: auto 100%;
+		-moz-background-size: auto 100%;
+		background-size: auto 100%;
+		background-position: center center;
+	}
+	
+	.hero-image li img {
+		display: block;
+		width: auto;
 	}
 
 	.backgroundsize .cbp-bislideshow li {
