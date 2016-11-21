@@ -536,6 +536,20 @@
 		padding-top: 1em;
 	}
 
+  .radio-inv {
+    margin: 150px 0px 150px 38px !important;
+  }
+  
+  .attending-question {
+    margin-left: 50px;
+    font-size: 1.5em;
+  }
+
+  .btn-success {
+    margin-right: 40px;
+    width: 80%;
+    height: 70px;
+  }
 }
 
 
