@@ -631,7 +631,7 @@
 	-o-animation-name: flipOutY;
 	backface-visibility: visible !important;
 	animation-name: flipOutY;
-	visibility: visible !important!
+	visibility: visible !important;
 }
 @-webkit-keyframes fadeIn {
 	0% {opacity: 0;}	
@@ -1939,9 +1939,9 @@
 	-o-animation-name: bounceIn;
 	animation-name: bounceIn;
 	visibility: visible !important;
-	-webkit-visibility: visible !important!;
-	-moz-visibility: visible !important!;
-	-o-visibility: visible !important!;
+	-webkit-visibility: visible !important;
+	-moz-visibility: visible !important;
+	-o-visibility: visible !important;
 }
 @-webkit-keyframes bounceInUp {
 	0% {
