@@ -24,3 +24,5 @@ end
 group :development do
   gem 'erd'
 end
+
+gem 'rails_12factor', group: :production
