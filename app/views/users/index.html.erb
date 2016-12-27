@@ -354,9 +354,15 @@
 						<!-- Slideshow -->
 						<div class="rslides_container">
 						  <ul class="rslides" id="slider">
-							<li><img src="assets/ceremony1.jpg" alt=""></li>
-							<li><img src="assets/ceremony2.jpg" alt=""></li>
-							<li><img src="assets/ceremony3.jpg" alt=""></li>
+                <li>
+                  <%= image_tag("ceremony1.jpg") %>
+                </li>
+                <li>
+                  <%= image_tag("ceremony2.jpg") %>
+                </li>
+                <li>
+                  <%= image_tag("ceremony3.jpg") %>
+                </li>
 						  </ul>
 						</div>
 					</div><!--end col-md-6-->
@@ -394,14 +400,14 @@
 				
 				<div class="row">
 					<div id="party-carousel">
-						<div class="item"><img src="assets/party1.jpg" alt="Image"></div>
-						<div class="item"><img src="assets/party2.jpg" alt="Image"></div>
-						<div class="item"><img src="assets/party3.jpg" alt="Image"></div>
-						<div class="item"><img src="assets/party4.jpg" alt="Image"></div>
-						<div class="item"><img src="assets/party5.jpg" alt="Image"></div>
-						<div class="item"><img src="assets/party6.jpg" alt="Image"></div>
-						<div class="item"><img src="assets/party7.jpg" alt="Image"></div>
-						<div class="item"><img src="assets/party8.jpg" alt="Image"></div>
+						<div class="item"><%= image_tag('party1.jpg')%></div>
+						<div class="item"><%= image_tag('party2.jpg')%></div>
+						<div class="item"><%= image_tag('party3.jpg')%></div>
+						<div class="item"><%= image_tag('party4.jpg')%></div>
+						<div class="item"><%= image_tag('party5.jpg')%></div>
+						<div class="item"><%= image_tag('party6.jpg')%></div>
+						<div class="item"><%= image_tag('party7.jpg')%></div>
+						<div class="item"><%= image_tag('party8.jpg')%></div>
 					</div>
 				</div><!--end row-->
 				
@@ -661,7 +667,7 @@
 								</form>
 							</div><!--end contact-form-->
 						</div><!--end col-md-6-->
-						<div class="col-md-3 rsvp-image"><img src="assets/rsvp-right.png" alt="rsvp" /></div><!--end col-md-3-->
+						<div class="col-md-3 rsvp-image"><%= image_tag("rsvp-right.png")%></div><!--end col-md-3-->
 				</div><!--end row-->
 				
 		</div><!--end container-->

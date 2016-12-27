@@ -773,7 +773,7 @@ section::after {
 }
 
 .shape .overlay.hexagon {
-	background: url("hexagon.png");
+	background-image: url("hexagon.png");
 }
 
 /* images hover effect */
