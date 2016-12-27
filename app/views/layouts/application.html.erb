@@ -43,7 +43,7 @@
 
 <%= yield %>
 
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>  
+<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBjGhS9Cx_HxWh7c3d6xzk6PDBjktcloa8"></script>  
 
 <script>
 /*global $:false */
@@ -236,6 +236,7 @@ window.onload = function () {
 	}
 ];
 
+// API-KEY: AIzaSyBjGhS9Cx_HxWh7c3d6xzk6PDBjktcloa8
 var myLatlng = new google.maps.LatLng(46.7697715,23.5896877,17);
 
 var options = {
