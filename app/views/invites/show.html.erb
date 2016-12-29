@@ -1,4 +1,67 @@
-<p id="notice"><%= notice %></p>
+<div id="wrapper">
 
-<%= link_to 'Edit', edit_invite_path(@invite) %> |
-<%= link_to 'Back', invites_path %>
+	<!--NAVIGATION (menu left)-->
+	<div class="container">
+	<div class="header-quote">“Your Mess is Mine”</div>
+		<ul id="gn-menu" class="gn-menu-main">
+			<li class="gn-trigger">
+				<div class="trigger"><a class="gn-icon gn-icon-menu"><span>Menu</span></a></div>
+				<nav class="gn-menu-wrapper">
+					<div class="gn-scroller">
+						<ul class="gn-menu">
+              <li>
+                <%= link_to 'Página principal', root_path, class: 'gn-icon fa-heart' %>
+              </li>
+              <% if user_signed_in?%>
+                <li>
+                  <%= link_to 'Cerrar Sesion', destroy_user_session_path, method: :delete, class: 'gn-icon fa-user' %>
+                </li>
+              <% end %>
+						</ul>
+					</div><!--end gn-scroller-->
+				</nav>
+			</li>
+			<li class="back"><a class="gn-icon fa-angle-double-up" href="index.html#top"></a></li>
+		</ul>
+	</div><!--end container-->
+	<section class="ss-style-bottom"></section>
+	<!--END NAVIGATION (menu left)-->
+	
+	
+	
+	<!--HEADER-->
+	<div id="home">
+		<!-- <ul id="cbp&#45;bislideshow" class="cbp&#45;bislideshow"> -->
+		<!-- 	<li><img src="assets/1.jpg" alt="image01"/></li> -->
+		<!-- 	<li><img src="assets/2.jpg" alt="image02"/></li> -->
+		<!-- 	<li><img src="assets/3.jpg" alt="image03"/></li> -->
+		<!-- </ul> -->
+		<ul class="hero-image">
+      <li>
+        <%= image_tag("1.jpg") %>
+      </li>
+		</ul>
+		<div class="container">
+			<div class="header animated tada">
+				<h1>Diego & Barbara</h1>
+				<h4>¡Gracias por Confirmar!</h4>
+				<hr />
+				<h4>Sábado, 25 de Febrero de 2017</h4>
+				<div class="header-button">
+          <%= link_to 'Regresa a la página principal', root_path %>
+				</div>
+			</div>
+		</div>
+	</div><!--end #home-->
+	<!--END HEADER-->
+
+	<!--FOOTER-->
+	<div class="copyright">
+		<div class="container">
+			&copy; Desarrollado por Zazvick
+		</div><!--end container-->
+	</div>
+
+</div>
+
+

@@ -12,7 +12,7 @@
               <h4 style='color: #D65679;'>En breve sabras número de acompañantes </h4>
             <% else %>
               <div class="contact-form ">
-                <%= form_for @invite, remote: true, class: 'form-horizontal' do |f| %>
+                <%= form_for @invite, class: 'form-horizontal' do |f| %>
                   <div class="form-group">
                     <label class="attending-question">¿Asistirás?</label><br />
                     <label for="invitation_confirm_1" class="attending-text">Si</label>
