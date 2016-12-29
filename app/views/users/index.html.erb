@@ -631,56 +631,58 @@
 	
 	
 	<!--FORM-->
-	<div id="form">
-		<div class="container">
-      <h3>Invitación</h3>
-			<div class="heart content-style"></div>
-			
-				<div class="row">
-						<div class="col-md-3 rsvp-image"><%= image_tag("rsvp-left.png")%></div><!--end col-md-3-->
-						<div class="col-md-6">
-							<div class="contact-form">
-								<form method="POST" id="contact-form" class="form-horizontal" action="#" onSubmit="">
-									<!-- <div class="form&#45;group"> -->
-									<!-- <label>Name</label> -->
-									<!-- <input class="form&#45;control" type="text" name="name" required/> -->
-									<!-- </div> -->
-									<!--  -->
-									<!-- <div class="form&#45;group"> -->
-									<!-- <label>Email</label> -->
-									<!-- 	<input class="form&#45;control" name="email" type="text" required/> -->
-									<!-- </div> -->
-									
-									<div class="form-group">
-                    <label class="attending-question">¿Asistirás?</label><br />
-										<input id="radio_1" type="radio" name="radio_group" class="radio-inv" value="yes">
-										<label class="attending-text" for="radio_1">Sí</label>
-										<input id="radio_2" type="radio" name="radio_group" class="radio-inv" value="no">
-										<label class="attending-text" for="radio_2">No</label>
-									</div>
-									
-									<!-- <div class="form&#45;group"> -->
-									<!-- <label>Message</label> -->
-									<!-- 	<textarea class="form&#45;control" name="message" rows="6" maxlength="1024" required></textarea> -->
-									<!-- </div> -->
-									
-									<div class="form-group">
-									<div class="col-lg-offset-2 col-lg-10">
-										<!-- <button class="btn btn&#45;default" type="reset" >Reset</button> -->
-										<input type="hidden" name="save" value="contact-form">
-										<button class="btn btn-success" id="submit" type="submit">Confirmar</button>
-									</div>
-									</div>
-								</form>
-							</div><!--end contact-form-->
-						</div><!--end col-md-6-->
-						<div class="col-md-3 rsvp-image"><%= image_tag("rsvp-right.png")%></div><!--end col-md-3-->
-				</div><!--end row-->
-				
-		</div><!--end container-->
-	</div><!--end #form-->
-	<!--END FORM-->
+	<!-- <div id="form"> -->
+	<!-- 	<div class="container"> -->
+  <!--     <h3>Invitación</h3> -->
+	<!-- 		<div class="heart content&#45;style"></div> -->
+	<!-- 		 -->
+	<!-- 			<div class="row"> -->
+	<!-- 					<div class="col&#45;md&#45;3 rsvp&#45;image"><%= image_tag("rsvp&#45;left.png")%></div><!&#45;&#45;end col&#45;md&#45;3&#45;&#45;> -->
+	<!-- 					<div class="col&#45;md&#45;6"> -->
+	<!-- 						<div class="contact&#45;form"> -->
+	<!-- 							<form method="POST" id="contact&#45;form" class="form&#45;horizontal" action="#" onSubmit=""> -->
+	<!-- 								<!&#45;&#45; <div class="form&#38;#45;group"> &#45;&#45;> -->
+	<!-- 								<!&#45;&#45; <label>Name</label> &#45;&#45;> -->
+	<!-- 								<!&#45;&#45; <input class="form&#38;#45;control" type="text" name="name" required/> &#45;&#45;> -->
+	<!-- 								<!&#45;&#45; </div> &#45;&#45;> -->
+	<!-- 								<!&#45;&#45;  &#45;&#45;> -->
+	<!-- 								<!&#45;&#45; <div class="form&#38;#45;group"> &#45;&#45;> -->
+	<!-- 								<!&#45;&#45; <label>Email</label> &#45;&#45;> -->
+	<!-- 								<!&#45;&#45; 	<input class="form&#38;#45;control" name="email" type="text" required/> &#45;&#45;> -->
+	<!-- 								<!&#45;&#45; </div> &#45;&#45;> -->
+	<!-- 								 -->
+	<!-- 								<div class="form&#45;group"> -->
+  <!--                   <label class="attending&#45;question">¿Asistirás?</label><br /> -->
+	<!-- 									<input id="radio_1" type="radio" name="radio_group" class="radio&#45;inv" value="yes"> -->
+	<!-- 									<label class="attending&#45;text" for="radio_1">Sí</label> -->
+	<!-- 									<input id="radio_2" type="radio" name="radio_group" class="radio&#45;inv" value="no"> -->
+	<!-- 									<label class="attending&#45;text" for="radio_2">No</label> -->
+	<!-- 								</div> -->
+	<!-- 								 -->
+	<!-- 								<!&#45;&#45; <div class="form&#38;#45;group"> &#45;&#45;> -->
+	<!-- 								<!&#45;&#45; <label>Message</label> &#45;&#45;> -->
+	<!-- 								<!&#45;&#45; 	<textarea class="form&#38;#45;control" name="message" rows="6" maxlength="1024" required></textarea> &#45;&#45;> -->
+	<!-- 								<!&#45;&#45; </div> &#45;&#45;> -->
+	<!-- 								 -->
+	<!-- 								<div class="form&#45;group"> -->
+	<!-- 								<div class="col&#45;lg&#45;offset&#45;2 col&#45;lg&#45;10"> -->
+	<!-- 									<!&#45;&#45; <button class="btn btn&#38;#45;default" type="reset" >Reset</button> &#45;&#45;> -->
+	<!-- 									<input type="hidden" name="save" value="contact&#45;form"> -->
+	<!-- 									<button class="btn btn&#45;success" id="submit" type="submit">Confirmar</button> -->
+	<!-- 								</div> -->
+	<!-- 								</div> -->
+	<!-- 							</form> -->
+	<!-- 						</div><!&#45;&#45;end contact&#45;form&#45;&#45;> -->
+	<!-- 					</div><!&#45;&#45;end col&#45;md&#45;6&#45;&#45;> -->
+	<!-- 					<div class="col&#45;md&#45;3 rsvp&#45;image"><%= image_tag("rsvp&#45;right.png")%></div><!&#45;&#45;end col&#45;md&#45;3&#45;&#45;> -->
+	<!-- 			</div><!&#45;&#45;end row&#45;&#45;> -->
+	<!-- 			 -->
+	<!-- 	</div><!&#45;&#45;end container&#45;&#45;> -->
+	<!-- </div><!&#45;&#45;end #form&#45;&#45;> -->
+	<!-- <!&#45;&#45;END FORM&#45;&#45;> -->
 	
+  <%= render 'shared/form' %>
+
 	<div id="registry">
 		<div class="container">
 			<div class="registry-text">

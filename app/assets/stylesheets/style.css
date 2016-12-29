@@ -1722,6 +1722,7 @@ figure.photostack-current::after {
 	font-size: 2em !important;
 	font-weight: 500;
 	padding-left: 0.6em;
+  margin: 157px 0 100px 100px;
 }
 
 .form-group {
