@@ -1,16 +1,96 @@
-<h2><%= t 'devise.invitations.edit.header' %></h2>
+<div id="wrapper">
 
-<%= form_for resource, :as => resource_name, :url => invitation_path(resource_name), :html => { :method => :put } do |f| %>
-  <%= devise_error_messages! %>
-  <%= f.hidden_field :invitation_token %>
+	<!--NAVIGATION (menu left)-->
+	<div class="container">
+	<div class="header-quote">“Your Mess is Mine”</div>
+		<ul id="gn-menu" class="gn-menu-main">
+			<li class="gn-trigger">
+				<div class="trigger"><a class="gn-icon gn-icon-menu"><span>Menu</span></a></div>
+				<nav class="gn-menu-wrapper">
+					<div class="gn-scroller">
+						<ul class="gn-menu">
+							<li><a href="#home" class="gn-icon fa-heart">Inicio</a></li>
+              <% if user_signed_in?%>
+                <li>
+                  <%= link_to 'Cerrar Sesion', destroy_user_session_path, method: :delete, class: 'gn-icon fa-user' %>
+                </li>
+              <% end %>
+						</ul>
+					</div><!--end gn-scroller-->
+				</nav>
+			</li>
+			<li class="back"><a class="gn-icon fa-angle-double-up" href="index.html#top"></a></li>
+		</ul>
+	</div><!--end container-->
+	<section class="ss-style-bottom"></section>
+	<!--END NAVIGATION (menu left)-->
 
-  <% if f.object.class.require_password_on_accepting %>
-  <p><%= f.label :password %><br />
-  <%= f.password_field :password %></p>
+	<!--HEADER-->
+	<div id="home">
+		<!-- <ul id="cbp&#45;bislideshow" class="cbp&#45;bislideshow"> -->
+		<!-- 	<li><img src="assets/1.jpg" alt="image01"/></li> -->
+		<!-- 	<li><img src="assets/2.jpg" alt="image02"/></li> -->
+		<!-- 	<li><img src="assets/3.jpg" alt="image03"/></li> -->
+		<!-- </ul> -->
+		<ul class="hero-image">
+      <li>
+        <%= image_tag("1.jpg") %>
+      </li>
+		</ul>
+		<div class="container">
+			<div class="header animated tada">
+				<h1>Diego & Barbara</h1>
+				<h4>¡NOS CASAMOS!</h4>
+				<hr />
+				<h4>Sábado, 25 de Febrero de 2017</h4>
+				<hr />
+        <h2 style='color: white;'>Crea tu contraseña</h2>
 
-  <p><%= f.label :password_confirmation %><br />
-  <%= f.password_field :password_confirmation %></p>
-  <% end %>
+        <%= form_for resource, :as => resource_name, :url => invitation_path(resource_name), :html => { :method => :put } do |f| %>
+          <%= devise_error_messages! %>
+          <%= f.hidden_field :invitation_token %>
 
-  <p><%= f.submit t("devise.invitations.edit.submit_button") %></p>
-<% end %>
+          <% if f.object.class.require_password_on_accepting %>
+            <p>
+              <%= f.label 'Contraseña', style: 'color: white;' %><br />
+              <%= f.password_field :password %>
+            </p>
+
+            <p>
+              <%= f.label 'Confirma tu contraseña', style: 'color: white;' %><br />
+              <%= f.password_field :password_confirmation %>
+            </p>
+          <% end %>
+
+          <p><%= f.submit "Crear contraseña" %></p>
+        <% end %>
+			</div>
+		</div>
+	</div><!--end #home-->
+	<!--END HEADER-->
+
+	<!--FOOTER-->
+	<div class="copyright">
+		<div class="container">
+			&copy; Desarrollado por Zazvick
+		</div><!--end container-->
+	</div>
+	<!--END FOOTER-->
+</div>
+<!-- <h2><%= t 'devise.invitations.edit.header' %></h2> -->
+<!--  -->
+<!-- <%= form_for resource, :as => resource_name, :url => invitation_path(resource_name), :html => { :method => :put } do |f| %> -->
+<!--   <%= devise_error_messages! %> -->
+<!--   <%= f.hidden_field :invitation_token %> -->
+<!--  -->
+<!--   <% if f.object.class.require_password_on_accepting %> -->
+<!--   <p><%= f.label :password %><br /> -->
+<!--   <%= f.password_field :password %></p> -->
+<!--  -->
+<!--   <p><%= f.label :password_confirmation %><br /> -->
+<!--   <%= f.password_field :password_confirmation %></p> -->
+<!--   <% end %> -->
+<!--  -->
+<!--   <p><%= f.submit t("devise.invitations.edit.submit_button") %></p> -->
+<!-- <% end %> -->
+<!--  -->

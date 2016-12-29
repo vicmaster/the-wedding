@@ -29,9 +29,11 @@
 							<!-- <li><a href="index.html#registry" class="gn&#45;icon fa&#45;gift">Mesa de Regalos</a></li> -->
 							<!-- <li><a href="index.html#album" class="gn&#45;icon fa&#45;camera">Photo Album</a></li> -->
 							<li><a href="#rsvp" class="gn-icon fa-book">Invitacion</a></li>
-              <li>
-                <%= link_to 'Cerrar Sesion', destroy_user_session_path, method: :delete, class: 'gn-icon fa-book' %>
-              </li>
+              <% if user_signed_in?%>
+                <li>
+                  <%= link_to 'Cerrar Sesion', destroy_user_session_path, method: :delete, class: 'gn-icon fa-user' %>
+                </li>
+              <% end %>
 						</ul>
 					</div><!--end gn-scroller-->
 				</nav>
