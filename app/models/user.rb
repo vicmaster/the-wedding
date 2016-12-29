@@ -1,3 +1,9 @@
 class User < ActiveRecord::Base
-  has_one :invitation
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable and :omniauthable
+  devise :invitable, :database_authenticatable,
+         :recoverable, :rememberable, :trackable, :validatable,
+         :invitable
+
+  has_one :invite
 end

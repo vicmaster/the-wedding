@@ -1,7 +1,9 @@
 D::Application.routes.draw do
-  root 'users#index'
+  devise_for :users
+ 
+  root to: 'users#index'
 
-  resources :invitations
+  resources :invites
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
