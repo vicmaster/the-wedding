@@ -75,6 +75,7 @@ D::Application.configure do
    :enable_starttls_auto => true
   }
 
+  config.action_mailer.default_url_options = { :host => "www.diegoybarbara.com" }
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation can not be found).
   config.i18n.fallbacks = true
