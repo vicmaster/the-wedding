@@ -67,10 +67,10 @@ D::Application.configure do
   config.action_mailer.delivery_method = :smtp
   # SMTP settings for gmail
   config.action_mailer.smtp_settings = {
-   :address              => "smtp.gmail.com",
+   :address              => "smtp.mandrillapp.com",
    :port                 => 587,
-   :user_name            => ENV['gmail_username'],
-   :password             => ENV['gmail_password'],
+   :user_name            => ENV['MANDRILL_USERNAME'],
+   :password             => ENV['MANDRILL_PASSWORD'],
    :authentication       => "plain",
    :enable_starttls_auto => true
   }
