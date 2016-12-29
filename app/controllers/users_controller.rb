@@ -2,8 +2,13 @@ class UsersController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @invite = Invite.new(invite_params)
-    @invite.user_id = current_user.id if current_user
+    if current_user.invite
+      @invite = current_user.invite
+      @invite.user_id = current_user.id if current_user
+      @invite.save
+    else
+      @invite = Invite.new(invite_params)
+    end
   end
 
   private
