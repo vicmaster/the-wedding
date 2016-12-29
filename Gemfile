@@ -26,6 +26,9 @@ end
 
 group :development do
   gem 'erd'
+  gem 'pry'
+  gem 'pry-remote'
+  gem 'pry-stack_explorer'
 end
 
 gem 'rails_12factor', group: :production
