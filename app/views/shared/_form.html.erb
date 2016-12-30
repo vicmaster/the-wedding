@@ -9,7 +9,7 @@
           <div class="col-md-6">
             <% if current_user.try(:invite).try(:invitation_confirm?) %>
               <h2 style='color: #D65679; margin-top: 150px;'>Gracias por confirmar</h2>
-              <h4 style='color: #D65679;'>En breve sabras tu número de acompañantes</h4>
+              <h4 style='color: #D65679;'>En breve te contactaremos para saber el número de acompañantes.</h4>
             <% else %>
               <div class="contact-form ">
                 <%= form_for @invite, class: 'form-horizontal' do |f| %>
